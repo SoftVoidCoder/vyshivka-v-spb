@@ -114,8 +114,10 @@ h1, h2, h3 { margin: 0; }
 }
 .perks li { position: relative; padding: 26px 28px 26px 58px; font-weight: 500; }
 .perks li::before {
-  content: "×"; position: absolute; left: 26px; top: 20px;
-  color: var(--red); font: 700 28px/1 var(--display);
+  content: ""; position: absolute; left: 31px; top: 28px;
+  width: 7px; height: 14px;
+  border: solid var(--red); border-width: 0 3px 3px 0;
+  rotate: 45deg;
 }
 .perks li + li { background: linear-gradient(var(--graphite), var(--graphite)) left 18px / 1px calc(100% - 36px) no-repeat; }
 
