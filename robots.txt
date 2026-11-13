@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vishivka-v-spb.ru/sitemap.xml

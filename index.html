@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Машинная вышивка на заказ в Санкт-Петербурге — Венерди</title>
+<meta name="description" content="Вышиваем логотипы, шевроны, имена и любые дизайны на одежде, текстиле и коже. Частным лицам и бизнесу. Срок от 1 дня, тестовый образец перед тиражом.">
+<link rel="canonical" href="https://vishivka-v-spb.ru/">
+<meta property="og:title" content="Венерди — машинная вышивка на заказ">
+<meta property="og:description" content="Логотипы, шевроны, мерч, именная вышивка. Собственное производство в Санкт-Петербурге.">
+<meta property="og:image" content="https://vishivka-v-spb.ru/assets/img/works/think-big.webp">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="logo" href="#">Венерди</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#services">Услуги</a>
+      <a href="#works">Работы</a>
+      <a href="#prices">Цены</a>
+      <a href="#steps">Как работаем</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top__phone" href="tel:+78005559155">8 800 555-91-55</a>
+    <a class="btn btn--small" href="#quiz">Рассчитать</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <p class="hero__brand" aria-hidden="true">Венерди</p>
+    <div class="hero__text">
+      <h1>Машинная вышивка на заказ и&nbsp;готовые изделия под&nbsp;ключ</h1>
+      <p class="hero__sub">Вышиваем логотипы, шевроны, имена и любые дизайны. Работаем с частными лицами и бизнесом. Срок от 1 дня. Не выцветает и выдерживает сотни стирок.</p>
+      <div class="hero__btns">
+        <a class="btn" href="#quiz">Рассчитать стоимость</a>
+        <button class="btn btn--ghost" type="button" data-open="callback">Заказать звонок</button>
+      </div>
+    </div>
+    <figure class="hoop">
+      <svg class="hoop__base" viewBox="0 0 400 400" role="img" aria-label="Вышивальная машина вышивает монограмму в пяльцах">
+        <defs>
+          <pattern id="weave" width="4" height="4" patternUnits="userSpaceOnUse">
+            <rect width="4" height="4" fill="#25242a"/>
+            <path d="M0 0h2v1H0zM2 2h2v1H2z" fill="#2e2d33"/>
+            <path d="M1 1h1v1H1zM3 3h1v1H3z" fill="#1f1e23"/>
+          </pattern>
+          <radialGradient id="taut" cx="45%" cy="40%" r="60%">
+            <stop offset="0" stop-color="#fff" stop-opacity=".06"/>
+            <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+            <stop offset="1" stop-color="#000" stop-opacity=".45"/>
+          </radialGradient>
+        </defs>
+        <circle cx="200" cy="200" r="187" fill="none" stroke="#a9a69c" stroke-width="12"/>
+        <circle cx="200" cy="200" r="192.5" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.2"/>
+        <circle cx="200" cy="200" r="179" fill="none" stroke="#d3d0c6" stroke-width="7"/>
+        <circle cx="200" cy="200" r="176" fill="url(#weave)"/>
+        <circle cx="200" cy="200" r="176" fill="url(#taut)"/>
+        <g fill="#a9a69c">
+          <rect x="183" y="0" width="12" height="20" rx="2"/>
+          <rect x="205" y="0" width="12" height="20" rx="2"/>
+          <rect x="179" y="5" width="42" height="7" rx="3.5" fill="#8c897f"/>
+          <circle cx="222" cy="8.5" r="5" fill="#77746b"/>
+        </g>
+        <!-- геометрия вышивки: только контуры, стежки строит main.js -->
+        <g fill="none" stroke="none" data-design>
+          <path data-kind="wreath" data-color="white" d="M200 62a138 138 0 1 1-.1 0"/>
+          <path data-kind="column" data-color="red" data-w="22" d="M163 286V114"/>
+          <path data-kind="column" data-color="red" data-w="22" d="M163 114h52c46 0 46 84 0 84h-52"/>
+          <path data-kind="column" data-color="red" data-w="22" d="M163 198h60c52 0 52 88 0 88h-60"/>
+        </g>
+      </svg>
+      <canvas class="hoop__layer" aria-hidden="true"></canvas>
+      <canvas class="hoop__layer" aria-hidden="true"></canvas>
+      <svg class="hoop__needle" viewBox="0 0 400 400" aria-hidden="true">
+        <g class="needle" transform="translate(200 40)">
+          <g data-foot>
+            <rect x="7" y="-52" width="3" height="46" fill="#8d8b86"/>
+            <circle r="7" fill="#fff" fill-opacity=".07" stroke="#cfcdc7" stroke-width="1.8"/>
+          </g>
+          <g data-bar>
+            <rect x="-4.5" y="-150" width="9" height="104" fill="#46454b"/>
+            <rect x="-3" y="-150" width="1.6" height="104" fill="#77767c"/>
+            <rect x="-6.5" y="-52" width="13" height="11" rx="1.5" fill="#2a292e"/>
+            <path d="M-1.4-41h2.8L.5-3 0 0-.5-3z" fill="#d4d3cf"/>
+            <ellipse cy="-8" rx=".5" ry="1.8" fill="#2a292e"/>
+            <path data-thread d="M4-140C9-90 3-30 .4-8" fill="none" stroke="#e6e4dc" stroke-width="1.1"/>
+          </g>
+        </g>
+      </svg>
+      <figcaption class="hoop__panel">
+        <i data-swatch></i>
+        <span><span data-thread-name>Белая нить</span><br><b data-count>0</b> стежков</span>
+        <button type="button" data-replay hidden aria-label="Вышить ещё раз" title="Вышить ещё раз"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M16 10a6 6 0 1 1-1.8-4.3M16 3v3.7h-3.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <ul class="perks">
+      <li>Работаем с вашим и нашим материалом</li>
+      <li>Создаём дизайны с нуля</li>
+      <li>Тестовый образец перед тиражом</li>
+    </ul>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap services__grid">
+    <h2 class="h2">Что мы вышиваем</h2>
+    <article class="svc svc--ink">
+      <h3>Для бизнеса и брендов</h3>
+      <p>Униформа, мерч, шевроны, вшивные бирки, вышивка на промо-текстиле: шопперы, кепки.</p>
+      <a class="svc__link" href="#works" data-filter="мерч">Смотреть работы</a>
+    </article>
+    <article class="svc svc--paper">
+      <h3>Личные вещи и подарки</h3>
+      <p>Халаты, полотенца, рубашки, джемперы, постельное бельё, именное текстильное оформление.</p>
+      <a class="svc__link" href="#works" data-filter="сувенир">Смотреть работы</a>
+    </article>
+    <article class="svc svc--red">
+      <h3>Сложные и нестандартные задачи</h3>
+      <p>Вышивка на коже, тематические коллекции и изделия под ключ.</p>
+      <a class="svc__link" href="#works" data-filter="кожа">Смотреть работы</a>
+    </article>
+  </div>
+</section>
+
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="works__head">
+      <h2 class="h2">Работы</h2>
+      <div class="filters" role="group" aria-label="Фильтр работ">
+        <button type="button" class="chip" aria-pressed="true" data-tag="">Все</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="логотип">Логотип</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="мерч">Мерч</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="шеврон">Шеврон</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="униформа">Униформа</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="одежда">Одежда</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="головной убор">Головной убор</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="кожа">Кожа</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="мебель">Мебель</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="декор">Декор</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="сувенир">Сувенир</button>
+        <button type="button" class="chip" aria-pressed="false" data-tag="художественный дизайн">Художественный дизайн</button>
+      </div>
+    </div>
+    <div class="gallery">
+      <button type="button" class="work" data-tags="логотип,одежда,униформа,мерч"><img src="assets/img/works/sweaters.webp" alt="Логотип на зелёных свитерах" loading="lazy" width="900" height="600"></button>
+      <button type="button" class="work" data-tags="кожа,логотип"><img src="assets/img/works/bull.webp" alt="Крупная вышивка быка на кожаной куртке" loading="lazy" width="545" height="545"></button>
+      <button type="button" class="work" data-tags="декор,художественный дизайн,мерч"><img src="assets/img/works/pillow-bag.webp" alt="Подушка и шоппер с геометрической вышивкой" loading="lazy" width="585" height="585"></button>
+      <button type="button" class="work" data-tags="шеврон,логотип"><img src="assets/img/works/patch-mountain.webp" alt="Круглый шеврон «Горная вода»" loading="lazy" width="319" height="213"></button>
+      <button type="button" class="work" data-tags="мебель,художественный дизайн"><img src="assets/img/works/chair.webp" alt="Цветочная вышивка на сиденье стула" loading="lazy" width="557" height="557"></button>
+      <button type="button" class="work" data-tags="головной убор,логотип,мерч"><img src="assets/img/works/cap.webp" alt="Логотип на кепке" loading="lazy" width="509" height="340"></button>
+      <button type="button" class="work" data-tags="художественный дизайн,сувенир"><img src="assets/img/works/floral-bag.webp" alt="Сумка с цветочной вышивкой" loading="lazy" width="404" height="404"></button>
+      <button type="button" class="work" data-tags="логотип,одежда,мерч"><img src="assets/img/works/think-big.webp" alt="Надпись Think Big зелёной нитью на куртке" loading="lazy" width="525" height="525"></button>
+      <button type="button" class="work" data-tags="кожа,одежда"><img src="assets/img/works/jacket.webp" alt="Кожаная куртка с вышивкой на спине" loading="lazy" width="381" height="381"></button>
+      <button type="button" class="work" data-tags="шеврон,мерч"><img src="assets/img/works/patches.webp" alt="Тираж фигурных шевронов" loading="lazy" width="422" height="331"></button>
+      <button type="button" class="work" data-tags="художественный дизайн,сувенир,мерч"><img src="assets/img/works/ships-bag.webp" alt="Шоппер с вышитыми мостами и алыми парусами" loading="lazy" width="545" height="545"></button>
+      <button type="button" class="work" data-tags="униформа,логотип"><img src="assets/img/works/apron.webp" alt="Логотип на фартуке" loading="lazy" width="380" height="380"></button>
+      <button type="button" class="work" data-tags="логотип,мерч,униформа"><img src="assets/img/works/masks.webp" alt="Логотипы на тканевых масках" loading="lazy" width="344" height="314"></button>
+    </div>
+  </div>
+</section>
+
+<section class="prices" id="prices">
+  <div class="wrap prices__grid">
+    <div>
+      <h2 class="h2">Как формируется цена</h2>
+      <p class="prices__lead">Стоимость вышивки зависит не от размера картинки, а от количества стежков в ней и тиража. Минимальный заказ — от 3 000 ₽.</p>
+      <a class="btn" href="#quiz">Рассчитать мой заказ</a>
+    </div>
+    <dl class="pricelist">
+      <div><dt>Оцифровка (создание дизайна)</dt><dd>1 000 ₽</dd></div>
+      <div><dt>Логотип на груди</dt><dd>от 180 ₽</dd></div>
+      <div><dt>Вышивка на спине</dt><dd>от 250 ₽</dd></div>
+      <div><dt>Шеврон</dt><dd>от 200 ₽</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="steps" id="steps">
+  <div class="wrap">
+    <h2 class="h2">Этапы работы</h2>
+    <ol class="steps__list">
+      <li><h3>Заявка и обсуждение</h3><p>Присылаете фото, логотип и идею.</p></li>
+      <li><h3>Оцифровка</h3><p>Создаём дизайн в программе и показываем, как будет выглядеть вышивка.</p></li>
+      <li><h3>Тестовый образец</h3><p>Делаем пробный вариант и утверждаем с вами.</p></li>
+      <li><h3>Производство</h3><p>Запускаем промышленные машины.</p></li>
+      <li><h3>Отправка</h3><p>Доставляем заказ курьером или транспортной компанией.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="why" id="about">
+  <div class="wrap why__grid">
+    <h2 class="h2 why__title">Почему выбирают нас</h2>
+    <div class="why__video">
+      <video src="assets/video/process.mp4" poster="assets/video/poster.jpg" controls preload="none" playsinline></video>
+      <p class="why__caption">Процесс производства, 38 секунд</p>
+    </div>
+    <dl class="why__list">
+      <div><dt>Оборудование</dt><dd>4 программируемые 15-игольные машины AURORA (CTF1202 — 2 шт., CTF1501W, Becs 285A) со свободным плечом. Вышиваем на тканях от сверхлёгких до сверхтяжёлых, на готовых изделиях и головных уборах.</dd></div>
+      <div><dt>Материалы</dt><dd>Используем только качественные полиэстеровые нитки Fufus.</dd></div>
+      <div><dt>Гарантия</dt><dd>Если нитка где-то пойдёт не так — переделаем за свой счёт.</dd></div>
+      <div><dt>Собственное производство</dt><dd>Без посредников и наценок.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="quiz" id="quiz">
+  <div class="wrap quiz__grid">
+    <div>
+      <h2 class="h2">Расчёт стоимости</h2>
+      <p class="quiz__lead">Четыре вопроса — и мы пришлём расчёт туда, где вам удобно.</p>
+      <div class="quiz__progress" aria-hidden="true"><span></span></div>
+      <p class="quiz__stepnum" aria-live="polite">Вопрос <b data-stepnum>1</b> из 4</p>
+    </div>
+
+    <form class="quiz__form" action="send.php" method="post" enctype="multipart/form-data" novalidate data-form="quiz">
+      <input type="hidden" name="type" value="quiz">
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <fieldset class="qstep" data-step="1">
+        <legend>Что будем вышивать?</legend>
+        <label class="opt"><input type="radio" name="what" value="Свою вещь" required><span>Свою вещь</span></label>
+        <label class="opt"><input type="radio" name="what" value="Нужна помощь с подбором одежды"><span>Нужна помощь с подбором одежды</span></label>
+        <label class="opt"><input type="radio" name="what" value="Сувениры"><span>Сувениры</span></label>
+        <label class="opt"><input type="radio" name="what" value="Другое"><span>Другое</span></label>
+      </fieldset>
+
+      <fieldset class="qstep" data-step="2" hidden>
+        <legend>Примерный тираж?</legend>
+        <label class="opt"><input type="radio" name="qty" value="1–2 шт." required><span>1–2 шт.</span></label>
+        <label class="opt"><input type="radio" name="qty" value="3–10 шт."><span>3–10 шт.</span></label>
+        <label class="opt"><input type="radio" name="qty" value="10–50 шт."><span>10–50 шт.</span></label>
+        <label class="opt"><input type="radio" name="qty" value="Более 50 шт."><span>Более 50 шт.</span></label>
+        <p class="hint">Минимальный заказ — от 3 000 ₽.</p>
+      </fieldset>
+
+      <fieldset class="qstep" data-step="3" hidden>
+        <legend>Есть готовый макет?</legend>
+        <label class="opt"><input type="radio" name="layout" value="Да, в векторе" required><span>Да, в векторе</span></label>
+        <label class="opt"><input type="radio" name="layout" value="Есть только картинка"><span>Есть только картинка</span></label>
+        <label class="opt"><input type="radio" name="layout" value="Нужна разработка с нуля"><span>Нужна разработка с нуля</span></label>
+        <label class="file">
+          <input type="file" name="file" accept=".jpg,.jpeg,.png,.webp,.pdf,.svg,.ai,.eps,.cdr">
+          <span data-filename>Прикрепить макет или фото</span>
+          <small>JPG, PNG, PDF, SVG, AI, EPS, CDR — до 10 МБ</small>
+        </label>
+      </fieldset>
+
+      <fieldset class="qstep" data-step="4" hidden>
+        <legend>Куда отправить расчёт?</legend>
+        <div class="seg">
+          <label><input type="radio" name="channel" value="Telegram" checked><span>Telegram</span></label>
+          <label><input type="radio" name="channel" value="WhatsApp"><span>WhatsApp</span></label>
+          <label><input type="radio" name="channel" value="Почта"><span>Почта</span></label>
+        </div>
+        <label class="field"><span>Имя</span><input type="text" name="name" autocomplete="name" maxlength="100"></label>
+        <label class="field"><span data-contact-label>Ник или телефон в Telegram</span><input type="text" name="contact" required maxlength="150" autocomplete="tel"></label>
+        <label class="agree"><input type="checkbox" name="agree" required> Согласен на обработку персональных данных</label>
+      </fieldset>
+
+      <p class="form__error" role="alert" hidden></p>
+      <div class="quiz__nav">
+        <button type="button" class="btn btn--ghost" data-prev hidden>Назад</button>
+        <button type="button" class="btn" data-next>Дальше</button>
+        <button type="submit" class="btn" data-submit hidden>Получить расчёт</button>
+      </div>
+    </form>
+
+    <div class="quiz__done" hidden tabindex="-1">
+      <h3>Заявка отправлена</h3>
+      <p>Мы свяжемся с вами в ближайшее время. Или позвоните сами: <a href="tel:+78005559155">8 800 555-91-55</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" id="contacts">
+  <div class="wrap foot__grid">
+    <div>
+      <p class="foot__logo">Венерди</p>
+      <p class="foot__note">Машинная вышивка на заказ<br>в Санкт-Петербурге</p>
+    </div>
+    <address class="foot__contacts">
+      <a class="foot__phone" href="tel:+78005559155">8 800 555-91-55</a>
+      <span>бесплатно по России</span>
+      <a href="mailto:zayavka@korda.spb.ru">zayavka@korda.spb.ru</a>
+      <span>Санкт-Петербург, ул. Розенштейна, 21, оф. 508</span>
+    </address>
+    <div class="foot__hours">
+      <p>Пн–чт 10:00–18:00<br>Пт 10:00–17:00</p>
+      <button class="btn btn--light" type="button" data-open="callback">Заказать звонок</button>
+    </div>
+  </div>
+  <div class="wrap foot__bottom">© 2026 Венерди</div>
+</footer>
+
+<dialog class="modal" id="callback">
+  <form class="modal__box" action="send.php" method="post" novalidate data-form="callback">
+    <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+    <h2>Заказать звонок</h2>
+    <p>Перезвоним в рабочее время и ответим на вопросы.</p>
+    <input type="hidden" name="type" value="callback">
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label class="field"><span>Имя</span><input type="text" name="name" autocomplete="name" maxlength="100"></label>
+    <label class="field"><span>Телефон</span><input type="tel" name="contact" required autocomplete="tel" maxlength="40"></label>
+    <label class="agree"><input type="checkbox" name="agree" required> Согласен на обработку персональных данных</label>
+    <p class="form__error" role="alert" hidden></p>
+    <button class="btn" type="submit">Жду звонка</button>
+    <p class="modal__done" hidden>Заявка отправлена. Скоро перезвоним.</p>
+  </form>
+</dialog>
+
+<dialog class="lightbox" id="lightbox">
+  <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+  <img src="" alt="">
+</dialog>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
