@@ -177,7 +177,8 @@ const PHONE = '8 800 555-91-55';
     foot.setAttribute('transform', `translate(0 ${(-lift * 3).toFixed(2)})`);
   };
 
-  let idx = 0, count = 0, t0 = 0;
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let idx = 0, count = 0, t0 = 0, again = 0;
   const apply = e => {
     if (e.type === 'stitch') { drawStitch(e); count++; }
     if (e.type === 'jump') jumps.push(e);
@@ -201,6 +202,7 @@ const PHONE = '8 800 555-91-55';
     redraw();
     setNeedle(PARK, 1);
     replay.hidden = false;
+    if (!reduced) again = setTimeout(play, 4000); // готовая работа висит 4 с, потом шьётся заново
   };
   const frame = now => {
     const tt = now - t0;
@@ -215,6 +217,7 @@ const PHONE = '8 800 555-91-55';
     requestAnimationFrame(frame);
   };
   const play = () => {
+    clearTimeout(again);
     idx = 0;
     replay.hidden = true;
     redraw();
@@ -225,7 +228,7 @@ const PHONE = '8 800 555-91-55';
 
   new ResizeObserver(redraw).observe(fig);
   replay.addEventListener('click', play);
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) finish();
+  if (reduced) finish();
   else play();
   console.assert(total > 500 && events.every(e => e.a && e.b), 'программа вышивки собрана неверно');
 })();
