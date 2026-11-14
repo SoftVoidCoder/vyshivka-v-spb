@@ -200,7 +200,6 @@ h1, h2, h3 { margin: 0; }
 .why__grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 28px 56px; }
 .why__title { grid-column: 1 / -1; }
 .why__video video { width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; background: var(--ink); object-fit: cover; }
-.why__caption { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
 .why__list { margin: 0; }
 .why__list div { padding: 18px 0; }
 .why__list div + div { background: var(--stitch) top / 100% 2px no-repeat; color: #cfcdc5; }
