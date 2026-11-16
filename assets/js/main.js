@@ -313,6 +313,7 @@ const go = n => {
 $('[data-next]', quiz).addEventListener('click', () => {
   const radio = $('input[type=radio][required]', steps[step]);
   if (radio && !quiz.elements[radio.name].value) return showError(quiz, 'Выберите один из вариантов.');
+  if (step === 2 && !quiz.elements.size.value.trim()) return showError(quiz, 'Укажите размер вышивки.');
   go(step + 1);
   $('input', steps[step]).focus();
 });

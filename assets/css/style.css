@@ -292,7 +292,8 @@ h1, h2, h3 { margin: 0; }
 @media (max-width: 1000px) {
   .nav { display: none; }
   .top__phone { margin-left: auto; }
-  .hero__grid { grid-template-columns: 1fr; grid-template-areas: "brand" "hoop" "text"; }
+  .hero__grid { grid-template-columns: 1fr; grid-template-areas: "hoop" "text"; }
+  .hero__brand { display: none; }
   .hoop { margin: 10px auto 0; width: min(420px, 80%); }
   .hero__text { padding-top: 10px; }
   .services__grid { grid-template-columns: 1fr; }

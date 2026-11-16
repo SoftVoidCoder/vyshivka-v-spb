@@ -219,9 +219,9 @@
   <div class="wrap quiz__grid">
     <div>
       <h2 class="h2">Расчёт стоимости</h2>
-      <p class="quiz__lead">Четыре вопроса — и мы пришлём расчёт туда, где вам удобно.</p>
+      <p class="quiz__lead">Пять вопросов — и мы пришлём расчёт туда, где вам удобно.</p>
       <div class="quiz__progress" aria-hidden="true"><span></span></div>
-      <p class="quiz__stepnum" aria-live="polite">Вопрос <b data-stepnum>1</b> из 4</p>
+      <p class="quiz__stepnum" aria-live="polite">Вопрос <b data-stepnum>1</b> из 5</p>
     </div>
 
     <form class="quiz__form" action="send.php" method="post" enctype="multipart/form-data" novalidate data-form="quiz">
@@ -246,6 +246,11 @@
       </fieldset>
 
       <fieldset class="qstep" data-step="3" hidden>
+        <legend>Размер вышивки?</legend>
+        <label class="field"><span>Длина × ширина или площадь</span><input type="text" name="size" placeholder="Например, 10 × 15 см или 150 см²" required maxlength="100"></label>
+      </fieldset>
+
+      <fieldset class="qstep" data-step="4" hidden>
         <legend>Есть готовый макет?</legend>
         <label class="opt"><input type="radio" name="layout" value="Да, в векторе" required><span>Да, в векторе</span></label>
         <label class="opt"><input type="radio" name="layout" value="Есть только картинка"><span>Есть только картинка</span></label>
@@ -257,7 +262,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="qstep" data-step="4" hidden>
+      <fieldset class="qstep" data-step="5" hidden>
         <legend>Куда отправить расчёт?</legend>
         <div class="seg">
           <label><input type="radio" name="channel" value="Telegram" checked><span>Telegram</span></label>

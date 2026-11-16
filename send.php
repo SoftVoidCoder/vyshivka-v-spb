@@ -56,6 +56,7 @@ if ($type === 'quiz') {
     $rows += [
         'Что вышиваем' => field('what', 100),
         'Тираж'        => field('qty', 50),
+        'Размер вышивки' => field('size', 100),
         'Макет'        => field('layout', 100),
         'Куда ответить' => field('channel', 20),
     ];
