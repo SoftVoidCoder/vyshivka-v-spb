@@ -211,7 +211,7 @@ h1, h2, h3 { margin: 0; }
 .quiz__grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: 56px; align-items: start; }
 .quiz__lead { margin: 20px 0 34px; font-size: 19px; max-width: 34ch; }
 .quiz__progress { height: 4px; background: #d3d1ca; border-radius: 2px; overflow: hidden; max-width: 340px; }
-.quiz__progress span { display: block; height: 100%; width: 25%; background: var(--red); transition: width .3s; }
+.quiz__progress span { display: block; height: 100%; width: 20%; background: var(--red); transition: width .3s; }
 .quiz__stepnum { margin: 10px 0 0; color: var(--muted); font-size: 15px; }
 .quiz__form, .quiz__done { background: var(--white); border-radius: 10px; padding: 36px; }
 .quiz__done { grid-column: 2; }
