@@ -15,8 +15,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<script>
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+  ym(62343280,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+</script>
 </head>
 <body>
+<noscript><div><img src="https://mc.yandex.ru/watch/62343280" style="position:absolute;left:-9999px" alt=""></div></noscript>
 
 <header class="top">
   <div class="wrap top__in">
@@ -295,7 +302,7 @@
         </div>
         <label class="field"><span>Имя</span><input type="text" name="name" autocomplete="name" maxlength="100"></label>
         <label class="field"><span data-contact-label>Ник или телефон в Telegram</span><input type="text" name="contact" required maxlength="150" autocomplete="tel"></label>
-        <label class="agree"><input type="checkbox" name="agree" required> Согласен на обработку персональных данных</label>
+        <label class="agree"><input type="checkbox" name="agree" required> <span>Согласен на <a href="privacy-policy.html" target="_blank">обработку персональных данных</a></span></label>
       </fieldset>
 
       <p class="form__error" role="alert" hidden></p>
@@ -332,7 +339,7 @@
       <button class="btn btn--light" type="button" data-open="callback">Заказать звонок</button>
     </div>
   </div>
-  <div class="wrap foot__bottom">© 2026 Венерди</div>
+  <div class="wrap foot__bottom">© 2026 Венерди · <a href="privacy-policy.html">Политика обработки персональных данных</a></div>
 </footer>
 
 <dialog class="modal" id="callback">
@@ -344,7 +351,7 @@
     <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
     <label class="field"><span>Имя</span><input type="text" name="name" autocomplete="name" maxlength="100"></label>
     <label class="field"><span>Телефон</span><input type="tel" name="contact" required autocomplete="tel" maxlength="40"></label>
-    <label class="agree"><input type="checkbox" name="agree" required> Согласен на обработку персональных данных</label>
+    <label class="agree"><input type="checkbox" name="agree" required> <span>Согласен на <a href="privacy-policy.html" target="_blank">обработку персональных данных</a></span></label>
     <p class="form__error" role="alert" hidden></p>
     <button class="btn" type="submit">Жду звонка</button>
     <p class="modal__done" hidden>Заявка отправлена. Скоро перезвоним.</p>
@@ -353,7 +360,7 @@
 
 <dialog class="lightbox" id="lightbox">
   <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
-  <img src="" alt="">
+  <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
 </dialog>
 
 <script src="assets/js/main.js" defer></script>
